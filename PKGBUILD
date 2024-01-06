@@ -42,8 +42,11 @@ options=(
 _http="https://gitlab.gnome.org"
 _ns="GNOME"
 _url="${_http}/${_ns}/${_pkgname}"
+_local="file://${HOME}/${_pkgname}"
 source=(
-  "git+${_url}.git")
+  # "git+${_url}.git"
+  "git+${_local}"
+)
 sha256sums=(
   SKIP)
 
